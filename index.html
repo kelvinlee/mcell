@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Mcell</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="homepage">
+		<div class="header">
+			<div class="header-bar">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<ul>
+					<li><a href="">理念</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Mcell</a></li>
+					<li><a href="">伙伴</a></li>
+					<li><a href="">案例</a></li>
+					<li><a href="">人才</a></li>
+				</ul>
+				<a href="#" class="btn-first">SEE OUR WORK</a>
+			</div>
+		</div>
+		<div class="body">
+			<div class="nav">
+				<ul>
+					<li><a href="">理念</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Mcell</a></li>
+					<li class="logo"><img src="img/logo.png" alt=""></li>
+					<li><a href="">伙伴</a></li>
+					<li><a href="">案例</a></li>
+					<li><a href="">人才</a></li>
+				</ul>
+			</div>
+			<div class="banners">
+				<div class="banner-list"><div class="banner banner1"><div class="container"><img class="text" src="img/banner-1-text.png" alt=""></div></div><div class="banner banner2"><div class="container"><img src="img/banner-2-text.png" alt="" class="text"><img src="img/banner-2-text2.png" alt="" class="text2"></div></div></div>
+				<div class="banner-span">
+					<span class="on"></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="POWERSCREEN">
+				<div class="container">
+					<div class="row p-title">
+						<img src="img/p-title.png" class="" alt="">
+					</div>
+					<div class="row p-list">
+						<div class="col-sm-4">
+							<div class="power power1">
+								<img src="img/p-1.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="power power2">
+								<img src="img/p-2.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="power power3">
+								<img src="img/p-3.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="power power4">
+								<img src="img/p-4.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="power power5">
+								<img src="img/p-5.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="power power6">
+								<img src="img/p-6.jpg" alt="">
+								<div class="p-t">建立多方合作伙伴</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="ad on">
+				<div class="text"></div>
+			</div>
+			<div class="clents">
+				<div class="container">
+					<img src="img/clents-all.jpg" alt="">
+				</div>
+			</div>
+			<div class="map">
+				<div class="container">
+					<div class="col-sm-12 map-title">
+						<img src="img/icon-local.png" alt="">
+						<br>
+						<h3>联 系 我 们</h3>
+					</div>
+					<div class="col-sm-8 map-content">
+						锐屏互动广告（北京）有限公司<br/>
+						北京市 朝阳区 京顺东街六号院 北京Link 六号楼三层<br/>
+						邮编：100025
+					</div>
+					<div class="col-sm-4 map-content">
+						+86 18611152140<br/>
+						+86 010-84306374<br/>
+						<a href="http://www.pscm.com.cn">www.pscm.com.cn</a>
+
+					</div>
+					<div class="col-sm-12 map-copy">
+						© 2013 Powerscreen 
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".btn-first").click(function(){
+					window.scrollTo(0,1);
+					$("body").removeClass("homepage");
+					setTimeout(function(){
+						// $(".banners").addClass("on");
+						bannerstar();
+					}, 510);
+					return false;
+				});
+			});
+			window.onscroll = function(evt){
+				// var y = $(".ad").height() - (-+$("body").height()-$(".ad").height()/2)*0.3;
+				var y = (document.body.scrollTop-$(".ad").offset().top-$(".ad").height()/2+$("body").height()/2)*0.4-190;
+				$(".ad").css({"background-position":"0px "+y+"px"})
+			}
+		</script>
+	</body>
+</html>
