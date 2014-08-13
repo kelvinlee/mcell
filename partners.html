@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Mcell - 伙伴</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="" style="background:#fff;">
+		<div class="body">
+			<div class="nav">
+				<ul>
+					<li><a href="philosophy.html">理念</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="mcell.html">Mcell</a></li>
+					<li class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
+					<li><a class="on" href="partners.html">伙伴</a></li>
+					<li><a href="case.html">案例</a></li>
+					<li><a href="talents.html">人才</a></li>
+				</ul>
+			</div> 
+			<div class="partners-items">
+				<div class="banner-partners">
+					<div class="container">
+						<div class="text"></div>
+					</div>
+				</div>
+				<div class="container philosophy-info">
+					<div class="info-text">
+						<i class="icon-quotes" style="height:40px; top:15px;"></i>
+						<div class="partners-item on">合作伙伴</div>
+						<div class="partners-item">资源体系</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-partners">
+				<div class="container">
+					<div class="partners-content"><img src="img/p-partners-1.jpg" alt=""></div>
+					<div class="partners-content"><img src="img/p-partners-2.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var i = $(".partners-item.on").index();
+				$(".partners-content").eq(i-1).show();
+				$(".partners-item").click(function(){
+					$(".partners-item").removeClass("on");
+					$(this).addClass("on");
+					var x = $(".partners-item.on").index();
+					$(".partners-content").hide();
+					$(".partners-content").eq(x-1).show();
+				});
+			});
+		</script>
+	</body>
+</html>
